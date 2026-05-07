@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Café Perú | UPSJB</title>
+    
+    <link rel="icon" type="image/jpg" href="logo/sanjuan.jpg">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="preloader">
+    <div class="logo-container">
+        <img src="logo/catlogo.png" alt="Logo Café" class="cat-logo-img">
+    </div>
+    <p class="loading-text">Cargando Aroma Peruano...</p>
+</div>
+
+<nav>
+    <div class="logo">CAFÉ PERÚ</div>
+    <div class="links">
+        <a href="#inicio">Historia</a>
+        <a href="#regiones">Regiones</a>
+        <a href="#agroindustria">Economía</a>
+        <a href="#analisis">Estadísticas</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#beneficios">Beneficios</a>
+    </div>
+</nav>
+
+    <div id="inicio">
+<section class="parallax-layer main-hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="video/portada.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+    
+    <div class="parallax-overlay">
+        <div class="hero-content">
+            <h1 class="hero-title">LA RUTA DEL CAFÉ PERUANO</h1>
+            <p class="hero-subtitle">Ingeniería, Tradición y Sabor de Exportación</p>
+            <div class="scroll-indicator">
+                <span>Desliza para conocer la historia</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="parallax-layer" style="background-image: url('img/imgarabe3.jpg');">
+            <div class="parallax-overlay"><div class="glass-box">
+                <h1>1. Orígenes en África</h1>
+                <p>En el siglo IX, el pastor Kaldi en Etiopía descubrió las propiedades energéticas del café al observar a sus cabras.</p>
+            </div></div>
+        </section>
+        <section class="parallax-layer" style="background-image: url('img/imgarabe1.jpg');">
+            <div class="parallax-overlay"><div class="glass-box">
+                <h1>2. El Mundo Islámico</h1>
+                <p>Yemen fue la cuna del cultivo organizado en el siglo XV, expandiendo la bebida por todo el mundo árabe.</p>
+            </div></div>
+        </section>
+        <section class="parallax-layer" style="background-image: url('img/imgeuropa1.jpg');">
+            <div class="parallax-overlay"><div class="glass-box">
+                <h1>3. Llegada a Europa</h1>
+                <p>En el siglo XVII, Venecia abrió las puertas al café en Europa, convirtiéndose en el motor de las ideas de la Ilustración.</p>
+            </div></div>
+        </section>
+        <section class="parallax-layer" style="background-image: url('img/imgexpansion1.jpg');">
+            <div class="parallax-overlay"><div class="glass-box">
+                <h1>4. Expansión en América</h1>
+                <p>Brasil y Colombia lideraron la producción masiva, llevando el aroma del café a cada rincón del nuevo continente.</p>
+            </div></div>
+        </section>
+        <section class="parallax-layer" style="background-image: url('img/imgactualidad2.jpg');">
+            <div class="parallax-overlay"><div class="glass-box">
+                <h1>5. El Café en el Perú</h1>
+                <p>Introducido en 1750, el Perú es hoy el principal exportador mundial de café orgánico por su calidad en altura.</p>
+            </div></div>
+        </section>
+    </div>
+
+    <main class="normal-scroll">
+        
+        <section id="regiones" class="section slide-up">
+            <h2 class="title-gold">Regiones Productoras</h2>
+            <p>Explora las características únicas de nuestras principales zonas cafetaleras:</p>
+            
+            <div class="carousel-container" style="background: #fff; padding: 30px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                
+                <div class="reg-nav" style="margin-bottom: 20px;">
+                    <button class="btn-reg active" onclick="jumpTo(0)">Cajamarca</button>
+                    <button class="btn-reg" onclick="jumpTo(1)">San Martín</button>
+                    <button class="btn-reg" onclick="jumpTo(2)">Junín</button>
+                    <button class="btn-reg" onclick="jumpTo(3)">Amazonas</button>
+                    <button class="btn-reg" onclick="jumpTo(4)">Cusco</button>
+                </div>
+
+                <div class="info-inner-card">
+                    <div class="reg-content">
+                        <div class="reg-card active" id="card-0">
+                            <h3>Cajamarca</h3>
+                            <p>Es el **primer productor nacional** de café. Se cultiva entre los 1,200 y 1,900 msnm. Sus granos destacan por una **acidez brillante**, cuerpo medio y notas dulces que recuerdan al chocolate y frutos rojos. Es la cuna de muchos ganadores de la Taza de Excelencia.</p>
+                        </div>
+                        <div class="reg-card" id="card-1">
+                            <h3>San Martín</h3>
+                            <p>Líder en **volumen y tecnificación agrícola**. El café se produce principalmente en la selva alta, ofreciendo un perfil balanceado con aromas intensos. Es clave para la agroindustria peruana por su capacidad de exportación constante y manejo de café orgánico.</p>
+                        </div>
+                        <div class="reg-card" id="card-2">
+                            <h3>Junín (Chanchamayo)</h3>
+                            <p>Una de las zonas con mayor tradición histórica. El café de la Selva Central es famoso por su **cuerpo intenso** y baja acidez. Presenta notas características de frutos secos, nueces y un postgusto prolongado a chocolate amargo.</p>
+                        </div>
+                        <div class="reg-card" id="card-3">
+                            <h3>Amazonas</h3>
+                            <p>Ubicado en zonas de **bosques de neblina**, este café desarrolla una complejidad aromática superior. Sus procesos suelen ser artesanales y orgánicos, logrando una taza limpia con notas cítricas, florales y una suavidad muy valorada en el mercado europeo.</p>
+                        </div>
+                        <div class="reg-card" id="card-4">
+                            <h3>Cusco</h3>
+                            <p>Cultivado en las laderas de los Andes hacia la Amazonía (Quillabamba), a alturas que superan los 1,800 msnm. Posee una **complejidad única** debido al clima extremo, con fragancias dulces, notas a caramelo y una acidez málica muy refinada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="agroindustria" class="section slide-up">
+            <h2 class="title-gold">Importancia Económica</h2>
+            <div class="text-block">
+                <p>El café representa el **principal producto agrícola de exportación** del país. Es el sustento directo de más de **223,000 familias** peruanas, siendo el pilar fundamental de la economía en 17 regiones de la selva alta.</p>
+            </div>
+        </section>
+
+        <section id="analisis" class="section slide-up">
+            <h2 class="title-gold">Comparador de Producción Multianual</h2>
+            <div class="chart-box"><canvas id="graficoCafe"></canvas></div>
+            <div class="stats-grid">
+                <div class="stat-card"><h3>Selección A</h3><p id="comp-a">-</p></div>
+                <div class="stat-card highlight"><h3>Diferencia (A vs B)</h3><p id="diff-result">0</p></div>
+                <div class="stat-card"><h3>Selección B</h3><p id="comp-b">-</p></div>
+            </div>
+        </section>
+
+        <section id="proceso" class="section">
+            <h2 class="title-gold">Proceso Técnico Productivo</h2>
+            
+            <div class="process-wrapper">
+                <div class="process-nav">
+                    <button class="btn-proc active" onclick="showProc(0)">Siembra</button>
+                    <button class="btn-proc" onclick="showProc(1)">Cosecha</button>
+                    <button class="btn-proc" onclick="showProc(2)">Despulpado</button>
+                    <button class="btn-proc" onclick="showProc(3)">Fermentación</button>
+                    <button class="btn-proc" onclick="showProc(4)">Secado</button>
+                    <button class="btn-proc" onclick="showProc(5)">Trillado</button>
+                    <button class="btn-proc" onclick="showProc(6)">Tostado</button>
+                </div>
+
+                <div class="process-main-card">
+                    <div class="info-inner-card">
+                        <div class="proc-display-horizontal">
+                            <div class="proc-text-side">
+                                <h3 id="proc-title">1. Siembra</h3>
+                                <p id="proc-desc">El ciclo inicia en el vivero con la selección de semillas certificadas. Tras 6 meses, los plantones se trasladan al campo definitivo.</p>
+                            </div>
+                            <div class="proc-img-container">
+                                <img id="proc-img" src="img/siembracafe.jpg" alt="Imagen Proceso">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proc-thumbnails">
+                        <img src="img/siembracafe.jpg" onclick="showProc(0)" class="mini-img active-mini">
+                        <img src="img/cosechacafe.jpg" onclick="showProc(1)" class="mini-img">
+                        <img src="img/despulpadocafe.jpg" onclick="showProc(2)" class="mini-img">
+                        <img src="img/fermentacionylavado.jpg" onclick="showProc(3)" class="mini-img">
+                        <img src="img/secadocafe.jpg" onclick="showProc(4)" class="mini-img">
+                        <img src="img/trilladocafe.png" onclick="showProc(5)" class="mini-img">
+                        <img src="img/tostadodelcafe.jpg" onclick="showProc(6)" class="mini-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-section" style="margin-top: 50px; text-align: center;">
+                <h3 class="title-gold" style="font-size: 1.2rem;">Proceso Productivo del Café Peruano</h3>
+                <div class="video-wrapper" style="max-width: 800px; margin: 20px auto;">
+                    <video controls width="100%" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); background: #000;">
+                        <source src="video/videoexplicativo.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="section slide-up">
+            <h2 class="title-gold">Beneficios del Café</h2>
+            <div class="benefits-grid">
+                <div class="b-item"><h3>Salud</h3><p>Rico en antioxidantes y polifenoles.</p></div>
+                <div class="b-item"><h3>Energía</h3><p>Mejora la concentración y enfoque.</p></div>
+                <div class="b-item"><h3>Economía</h3><p>Genera empleo y divisas al país.</p></div>
+                <div class="b-item"><h3>Social</h3><p>Impulsa el desarrollo rural sostenible.</p></div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer-institucional">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3><i class="fas fa-university"></i> Docente:</h3>
+            <div class="info-list">
+                <p><strong>Docente:</strong> Mg. Ysac Samuel Flores Mendoza</p>
+                <p><strong>Área:</strong> Informatica Aplicada</p>
+                <p><strong>Escuela ejecutora:</strong> Ingeniería en Enología y Viticultura</p>
+                <p><strong>Año Académico:</strong> 2026-1</p>
+                <p><strong>Zona de Intervención:</strong> Ica</p>
+            </div>
+        </div>
+
+        <div class="footer-column central">
+            <h3>Institución</h3>
+            <div class="logo-footer">
+                <img src="logo/sanjuan.jpg" alt="Logo Universidad">
+            </div>
+            <h4>Universidad Privada San Juan Bautista</h4>
+            <h5>Facultad de Ingenierías</h5>
+            <p class="mission">Formando profesionales comprometidos con el desarrollo sostenible del sector vitivinícola - Formando el camino</p>
+        </div>
+
+        <div class="footer-column">
+            <h3><i class="fas fa-users"></i> Estudiante Desarrollador:</h3>
+            <div class="info-list">
+                <p>Sanchez Ayme Jose Luis</p>
+                    <p>📧dsanchezayme@gmail.com</p>
+            </div>
+            <div class="contact-box">
+                <p><i class="fas fa-envelope"></i> ysac.flores@upsjb.edu.pe</p>
+                <p><i class="fas fa-phone"></i> +51 922 924 888</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>🍇 Proyecto de Pagina Web - Ingenieria Agroindustrial 🍷</p>
+        <p>© 2025 Ingeniería en Enología y Viticultura - Ysac Samuel - Todos los derechos reservados</p>
+        <p class="slogan">"Cultivando conocimiento, cosechando desarrollo social"</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
